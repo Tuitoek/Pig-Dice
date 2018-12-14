@@ -23,24 +23,34 @@ body{
  display:flex;
  justify-content: space-around;
 }
-#you{
-float: left;
-}
-#computer{
-  float: right;
-}
 .player{
   display:none;
 }
 .player #you p{
   color:white;
+  font-size: 40px;
+}
+.player{
+  display: flex;
+  justify-content: space-around;
 }
 .player #computer p{
   color:white;
+  font-size: 40px;
 }
-.player #you .roll{
+.panel .roll{
   font-size:40px;
 }
-.player #you .hold{
+.panel .hold{
   font-size: 40px;
+}
+
+.panel{
+  display:none;
+}
+#you{
+  display:none;
+}
+#computer{
+  display: none;
 }
