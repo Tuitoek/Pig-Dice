@@ -38,3 +38,9 @@ float: left;
 .player #computer p{
   color:white;
 }
+.player #you .roll{
+  font-size:40px;
+}
+.player #you .hold{
+  font-size: 40px;
+}
