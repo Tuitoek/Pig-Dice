@@ -1,5 +1,5 @@
 body{
-  background-image: url("https://wallpapercave.com/wp/gKFxXrk.jpg");
+  background-image: url("https://wallpapercave.com/wp/7cVRzLj.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Caveat', cursive;
@@ -24,29 +24,30 @@ body{
  justify-content: space-around;
 }
 .col-md-4{
-  /* display:none; */
-  background-color: black;
+  display:none;
+  background-color: white;
   opacity: 0.7;
 }
-.col-md-4 p {
+.player #you .row .col-md-4 p {
   font-size: 20px;
-  color:white;
+  color:black;
 }
-.col-md-5 p {
+.player #computer .row .col-md-5 p {
   font-size: 20px;
-  color:white;
+  color:black;
+}
 .col-md-5{
-  /* display:none; */
-  background-color: black;
+  display:none;
+  background-color: white;
   opacity: 0.7;
+}
+.player{
+  display: flex;
+  justify-content:space-around;
 }
 .player #you p{
   color:white;
   font-size: 40px;
-}
-.player{
-  display: flex;
-  justify-content: space-around;
 }
 .player #computer p{
   color:white;
@@ -65,12 +66,9 @@ body{
   font-size:20px;
 }
 
-.panel{
+.player #you{
   display:none;
 }
-#you{
-  display:none;
-}
-#computer{
+.player #computer{
   display: none;
 }
