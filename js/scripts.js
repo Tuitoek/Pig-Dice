@@ -2,7 +2,10 @@ $(document).ready(function(){
   $("button.play").click(function (event){
     $("#you").show();
     $("#computer").show();
+    $(".col-md-4").show();
+    $(".col-md-5").show();
     $(".jumbotron").hide();
+
 
     function player(player1,player2){
       this.player1=player1;
@@ -29,6 +32,7 @@ $(document).ready(function(){
         final = 0;
       });
      });
+
      var player2 = $(".oll").click(function(event){
         var posibility = [];
         posibility.push(Math.floor(Math.random()*6)+1);
@@ -50,14 +54,4 @@ $(document).ready(function(){
        });
 
     });
-
-
-
-  $("button.hard").click(function(){
-    $("#you").show();
-    $("#computer").show();
-    $(".panel").show();
-
-    $(".jumbotron").hide();
-  });
 });
