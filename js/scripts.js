@@ -25,30 +25,29 @@ $(document).ready(function(){
       $(".result").html(total);
 
       $(".hold").click(function(event){
-        $(".outcome").stop();
-        $(".result").stop();
+        outCome = 0;
+        final = 0;
       });
      });
-          var player2 = $(".roll").click(function(event){
-            var posibility = [];
-            posibilty.push(Math.floor(Math.random()*6)+1);
-            $(".outcomes").html(posibility);
+     var player2 = $(".oll").click(function(event){
+        var posibility = [];
+        posibility.push(Math.floor(Math.random()*6)+1);
+        $(".outcomes").html(posibility);
+        var outcome = posibility;
+        if (outcome == 1 || outcome == 6){
+           outcome = 0;
 
-            var outcome = posibility;
-            if (outcome == 1 || outcome == 6){
-               total = 0;
+        }
+        var end= function results(outcome){
+          this.outcome = outcome;
+        }
+        $(".results").html(outcome);
 
-            }
-            var final= function results(total){
-              this.total = total;
-            }
-            $(".results").html(total);
-
-            $(".hold").click(function(event){
-              $(".outcomes").stop();
-              $(".results").stop();
-            });
-           });
+        $(".hold").click(function(event){
+          $(".outcomes").stop();
+          $(".results").stop();
+        });
+       });
 
     });
 
